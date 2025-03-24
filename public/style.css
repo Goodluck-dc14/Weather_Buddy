@@ -1,0 +1,105 @@
+/* Reset some defaults */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to bottom,
+    #87ceeb,
+    #e0f7fa
+  ); /* Sky blue gradient */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header styling */
+header {
+  background: #ffd700; /* Sunny yellow */
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  color: #1e90ff; /* Dodger blue text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1.2em;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Search box */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#city {
+  padding: 10px;
+  border: 2px solid #1e90ff;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 70%;
+  background: #f0f8ff; /* Light blue input */
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  background: #ff4500; /* Orange-red button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff6347; /* Lighter tomato shade */
+}
+
+/* Result box */
+.result-box {
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #2f4f4f; /* Dark slate gray */
+}
+
+.result-box h2 {
+  color: #4682b4; /* Steel blue */
+  margin-top: 0;
+}
+
+.result-box p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+  background: #20b2aa; /* Light sea green */
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  font-size: 0.9em;
+}
