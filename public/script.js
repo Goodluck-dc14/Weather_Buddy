@@ -4,7 +4,7 @@ async function getWeather() {
   resultDiv.innerHTML = "Loading...";
 
   try {
-    const response = await fetch(`http://localhost:3000/weather?city=${city}`);
+    const response = await fetch(`http://44.208.26.113/weather?city=${city}`);
     if (!response.ok) throw new Error(`Server error: ${response.status}`);
     const data = await response.json();
 
